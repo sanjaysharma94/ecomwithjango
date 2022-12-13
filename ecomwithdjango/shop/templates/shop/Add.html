@@ -1,0 +1,34 @@
+
+
+{% extends 'shop/basic.html' %}
+{% block title %} Add members {% endblock %} 
+
+
+{% block body %} 
+
+<h1>Add member</h1>
+
+<form action="#" method="post">
+{% csrf_token %}
+Product Name:<br>
+<input type="text" name="prod-name">
+<br><br>
+Produt Description:<br>
+<input type="text" name="prod-desc">
+<br><br>
+Product Category:<br>
+<input type="text" name="prod-cat">
+<br><br>
+Product Subcategory:<br>
+<input type="text" name="prod-subcat">
+<br><br>
+Product Price:<br>
+<input type="number" name="prod-price">
+<br><br>
+Product Image:<br>
+<input type="file"  name="prod-image" accept="image/*">
+<br><br>
+<input type="submit" value="Submit">
+</form>
+
+{% endblock %}
